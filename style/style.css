@@ -1,0 +1,51 @@
+:root {
+  --fondo: #f3f5fc;
+}
+
+body {
+  background-color: var(--fondo);
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  text-align: center;
+  height: 100vh; /* Asegura que el contenedor ocupe toda la altura de la pantalla */
+}
+
+.flex-item-left {
+  background-color: var(--fondo);
+  padding: 10px;
+  flex: 80%;
+}
+.texto-ingresado {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 10px;
+  background-color: var(--fondo);
+  border: none;
+}
+
+.flex-item-right {
+  padding: 10px;
+  flex: 50%;
+  display: flex; /* Agregar flexbox aquí */
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+}
+
+.muneco {
+  width: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
