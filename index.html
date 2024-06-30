@@ -6,40 +6,38 @@
     <title>Encriptador de mensajes</title>
     <link rel="stylesheet" href="./style/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="flex-container" >
-<div class="flex-item-left" >
-<h1
-class="titulo"
->Encriptador de texto</h1>
-
-<textarea placeholder="Ingrese texto aqui" name="texto-ingresado" id="texto-ingresado" class="texto-ingresado"></textarea>
-<div class="terminos">
-    <p>solamente utilize letras minusculas y sin acentos</p>
-</div>
-<div class="botones">
-    <button class="btn-encriptar" type="button" onclick="encriptar()" > encriptar</button>
-    <button class="btn-descifrar" type="button" onclick="descifrar()" > descifrar</button>
-</div>
-</div>
-
-
-<div class="flex-item-right" >
-    <div class="mostrar-text" >
-        <img class="muneco" src="./img/muneco/img2.png" alt="imagen de persona con una lupa">
-        <div class="mensaje-encriptado" id="mensaje-encriptado"></div>
-        <h2 id="titulo-mensaje" >Ningún mensaje encontrado</h2>
-        <p id="parrafo" class="parrafo">Ingresa el mensaje que deseas encriptar o descifrar</p>
-        <textarea name="mensaje" id="mensaje" class="mensaje " cols="30" rows="10"></textarea>
+    <div class="flex-container">
+        <div class="flex-item-left">
+            <p class="alura-text">a</p>
+            <h1 class="titulo">Encriptador de texto</h1>
+            <textarea placeholder="Ingrese texto aquí" name="texto-ingresado" id="texto-ingresado" class="texto-ingresado"></textarea>
+            <div class="terminos">
+                <p  class="terminos">Solamente utilice letras minúsculas y sin acentos</p>
+            </div>
+            <div class="botones">
+                <button class="btn-encriptar" type="button" onclick="encriptar()">Encriptar</button>
+                <button class="btn-descifrar" type="button" onclick="descifrar()">Descifrar</button>
+                <button class="btn-reiniciar" type="button" onclick="reiniciar()">Reiniciar</button>
+            </div>
+        </div>
+        <div class="flex-item-right">
+            <div class="mostrar-text">
+                <div class="div-muneco">
+                    <img id="muneco" class="muneco" src="./img/muneco/img2.png" alt="imagen de persona con una lupa">
+                </div>
+                <div class="mensaje-encriptado" id="mensaje-encriptado"></div>
+                <h2 id="titulo-mensaje">Ningún mensaje encontrado</h2>
+                <p id="mensaje-cifrado" class="mensaje-cifrado"> </p>
+            </div>
+        </div>
     </div>
-
-</div>
-
-    </div>
-</body>  
-  <script src="/js.js"></script>
-
+    <footer class="footer">
+        <p class="pie_footer" >Sebastian Macharette &copy 2024</p>
+    </footer>
+</body>
+<script src="/js.js"></script>
 </html>
